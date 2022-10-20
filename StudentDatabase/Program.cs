@@ -10,7 +10,7 @@ while (searchAgain == true)
 
     if (userEntry < 1 || userEntry > studentName.Length)
     {
-        Console.WriteLine($"Please enter a number between 1 and {studentName.Length}, program will prompt for another entry");
+        Console.WriteLine($"Please enter a number between 1 and {studentName.Length}, program will prompt for another entry \n");
         continue;
     }
     else
@@ -29,7 +29,7 @@ while (searchAgain == true)
                 Console.WriteLine($"{studentName[userEntry - 1]}'s hometown is {studentHomeTown[userEntry - 1]}");
                 break;
             default:
-                Console.WriteLine("That category is not in my databanks, please try again, program will prompt for another entry.");
+                Console.WriteLine("That category is not in my databanks, please try again, program will prompt you to start over.");
                 continue;
                 break;
         }
